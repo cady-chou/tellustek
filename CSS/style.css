@@ -142,6 +142,7 @@
     text-align: center;
     text-decoration: none;
     border-right: 1px solid #f0f0f0;
+    letter-spacing: 1px;
 }
 
 .nav-link:first-child {
@@ -303,13 +304,73 @@
     position: relative;
 }
 
+.banner-img {
+    background-image: url(../img/banner.png);
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-content {
+    height: 100%;
+}
+
+.banner-price {
+    height: 92px;
+    width: 92px;
+    position: absolute;
+    bottom: 0px;
+    left: 16px;
+    padding: 38px 23px 28px 12px;
+}
+
+.banner-position {
+    top: 17%;
+}
+
+.banner-content h2 {
+    position: absolute;
+    top: 30%;
+    left: 16px;
+}
+
+.banner-content p {
+    position: absolute;
+    top: 48%;
+    left: 16px;
+    width: 70%;
+    font-size: 22px;
+}
+
+.banner-icon {
+    position: absolute;
+    top: 70%;
+    left: 16px;
+}
+
+.banner-icon a {
+    background-color: #fff;
+    padding: 10px 10px;
+}
+
+.banner-icon a:hover {
+    color: #57c5a0;
+}
+
 .banner-box {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #57c5a0;
+    /* background-color: #57c5a0; */
+}
+
+.show {
+    display: block;
 }
 
 .banner-bottom {
@@ -334,13 +395,17 @@
 }
 
 .banner-time {
-    width: 100%;
+    width: 0%;
     height: 20%;
     position: absolute;
     top: 5px;
     left: 0;
     background-color: #fff;
     transition: all 3s;
+}
+
+.width-full {
+    width: 100%;
 }
 
 .onsale-box,
