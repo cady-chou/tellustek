@@ -305,6 +305,7 @@
 
 .right-navbar {
     float: right;
+    position: relative;
 }
 
 .favorites,
@@ -364,6 +365,41 @@
 
 .shoppingcart-btn:hover {
     color: #57c5a0;
+}
+
+.item-img {
+    background-image: url(../img/draw.jpg);
+    height: 50px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.shopping-item {
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+    transition: all 0.3s;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.list-show {
+    height: 250px;
+}
+
+@media(max-width:768px) {
+    .shopping-item {
+        top: 60px;
+    }
+}
+
+@media(max-width:360px) {
+    .shopping-item {
+        top: 46px;
+    }
 }
 
 .banner-group {
@@ -522,6 +558,16 @@
     text-align: center;
     font-size: 30px;
     position: relative;
+    border: none;
+    outline: none;
+}
+
+.banner-btn:hover {
+    background-color: #494949;
+}
+
+.banner-btn:active {
+    background-color: #000000;
 }
 
 .banner-time {
@@ -531,7 +577,11 @@
     top: 5%;
     left: 0;
     background-color: #57c5a0;
+}
+
+.width-full {
     transition: all 3s;
+    width: 100%;
 }
 
 .banner-title {
@@ -567,15 +617,8 @@
         font-size: 12px;
     }
     .banner-subtitle {
-        display: none;
+        line-height: 13px;
     }
-    .u-banner-height {
-        line-height: 30px;
-    }
-}
-
-.width-full {
-    width: 100%;
 }
 
 @media (max-width:768px) {
