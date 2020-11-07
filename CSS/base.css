@@ -624,21 +624,3 @@
  /*-------------------------*/
  /* $Utility 
 ---------------------------*/
- 
- .u-push-right {
-     float: right !important;
- }
- 
- .u-pull-left {
-     float: left !important;
- }
- 
- .u-text-center {
-     text-align: center !important;
- }
- 
- @media (max-width: 768px) {
-     .u-xs-hidden {
-         display: none !important;
-     }
- }
