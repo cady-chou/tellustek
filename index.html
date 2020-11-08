@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tellustek</title>
+    <link rel="stylesheet" href="./Tellustek/CSS/layout.css">
+    <link rel="stylesheet" href="./Tellustek/CSS/base.css">
+    <link rel="stylesheet" href="./Tellustek/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Start header -->
+        <header>
+            <div class="header-top bg-color-black">
+                <div class="container nav-top">
+                    <a href="#" class="left-logo">
+                        <div class="header-title color-secondary">FOOSESHOES</div>
+                    </a>
+                    <div class="right-loginbar color-third">
+                        <div class="header-search">
+                            <input type="search" id="search" placeholder="Search..." />
+                            <span class="icon"><i class="fas fa-search"></i></span>
+                        </div>
+                        <div class="header-login">
+                            <a class="color-third " href="#">LOGIN or REGISTER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar bg-color-white">
+                <div class="container">
+                    <label class="burger color-third" for="burger">☰</label>
+                    <input class="checkbox" type="checkbox" id="burger">
+                    <ul class="left-navbar">
+                        <li> <a class="nav-link" href="#home">Home</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">Products</button>
+                                <div class="dropdown-content">
+                                    <div class="row">
+                                        <div class="col-4 ">
+                                            <h3>ON SALE</h3>
+                                            <a class="nav-item" href="#">
+                                                <div class="sale-img"></div>
+                                                <div class="sale-content">Lorem ipsum dolor sit amet.</div>
+                                            </a>
+                                            <a class="nav-item" href="#">
+                                                <div class="sale-img"></div>
+                                                <div class="sale-content">Lorem ipsum dolor sit amet.</div>
+                                            </a>
+                                            <a class="nav-item" href="#">
+                                                <div class="sale-img"></div>
+                                                <div class="sale-content">Lorem ipsum dolor sit amet.</div>
+                                            </a>
+                                        </div>
+                                        <div class="col-4 ">
+                                            <h3>SPECIAL OFFERS</h3>
+                                            <a class="nav-item" href="#">
+                                                <div class="sale-img"></div>
+                                                <div class="sale-content">Lorem ipsum dolor sit amet.</div>
+                                            </a>
+                                            <a class="nav-item" href="#">
+                                                <div class="sale-img"></div>
+                                                <div class="sale-content">Lorem ipsum dolor sit amet.</div>
+                                            </a>
+                                            <a class="nav-item" href="#">
+                                                <div class="sale-img"></div>
+                                                <div class="sale-content">Lorem ipsum dolor sit amet.</div>
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <h3>MUST HAVE</h3>
+                                            <a class="nav-item" href="#">
+                                                <div class="sale-img"></div>
+                                                <div class="sale-content">Lorem ipsum dolor sit amet.</div>
+                                            </a>
+                                            <a class="nav-item" href="#">
+                                                <div class="sale-img"></div>
+                                                <div class="sale-content">Lorem ipsum dolor sit amet.</div>
+                                            </a>
+                                            <a class="nav-item" href="#">
+                                                <div class="sale-img"></div>
+                                                <div class="sale-content">Lorem ipsum dolor sit amet.</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#pages">Pages</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="right-navbar">
+                        <div class="favorites" style="border-left: 1px solid #d2d2d2;">
+                            <a class="color-third" href="#"><i class="far fa-star"></i></a>
+                            <span class="favorites-badge">30</span>
+                        </div>
+                        <div class="shoppingcart">
+                            <button onclick="shoppingcartBtn()" class="shoppingcart-btn color-third"><i class="fas fa-shopping-cart"></i></button>
+                            <span class="shoppingcart-badge bg-color-secondary">0</span>
+                            <div class="shopping-item">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End header -->
+        <!-- Start main -->
+        <section class="main">
+            <div class="banner bg-color-primary">
+                <div class="container">
+                    <div class="banner-group">
+                        <div class="banner-box banner-1 row">
+                            <div class="col-lg-6 banner-img"></div>
+                            <div class="col-lg-6 banner-content">
+                                <div class="banner-price bg-color-secondary color-white banner-position">$145.99</div>
+                                <h2>Pink Shoes<br>2013 Collection</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit eius sint odit quas reprehenderit eveniet</p>
+                                <div class="banner-icon">
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-eye" ></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-star"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-share-square"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-box banner-2 row">
+                            <div class="col-lg-6 banner-img"></div>
+                            <div class="col-lg-6 banner-content">
+                                <div class="banner-price bg-color-secondary color-white banner-position">$145.99</div>
+                                <h2>Anna Field<br>2013 Collection</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit eius sint odit quas reprehenderit eveniet</p>
+                                <div class="banner-icon">
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-eye" ></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-star"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-share-square"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-box banner-3 row">
+                            <div class="col-lg-6 banner-img"></div>
+                            <div class="col-lg-6 banner-content">
+                                <div class="banner-price bg-color-secondary color-white banner-position">$145.99</div>
+                                <h2>Prada<br>2013 Collection</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit eius sint odit quas reprehenderit eveniet</p>
+                                <div class="banner-icon">
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-eye" ></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-star"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-share-square"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-box banner-4 row">
+                            <div class="col-lg-6 banner-img"></div>
+                            <div class="col-lg-6 banner-content">
+                                <div class="banner-price bg-color-secondary color-white banner-position">$145.99</div>
+                                <h2>Casadei<br>2013 Collection</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit eius sint odit quas reprehenderit eveniet</p>
+                                <div class="banner-icon">
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-eye" ></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-star"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-share-square"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-box banner-0 row">
+                            <div class="col-lg-6 banner-img"></div>
+                            <div class="col-lg-6 banner-content">
+                                <div class="banner-price bg-color-secondary color-white banner-position">$145.99</div>
+                                <h2>Mellow Yellow<br>2013 Collection</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit eius sint odit quas reprehenderit eveniet</p>
+                                <div class="banner-icon">
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-eye" ></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-star"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-share-square"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-bottom bg-color-grey">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1-5">
+                            <button class="banner-btn" onclick="buttonClick(1)">
+                                <div class="banner-time banner-time1"></div>
+                                <div class="banner-title">Pink Shoes
+                                </div>
+                                <div class="banner-subtitle">Now af $145.99</div>
+                            </buttin>
+                        </div>
+                        <div class="col-1-5">
+                            <button class="banner-btn" onclick="buttonClick(2)">
+                                <div class="banner-time banner-time2"></div>
+                                <div class="banner-title">Anna Field</div>
+                                <div class="banner-subtitle">Limited Edition</div>
+                            </button>
+                        </div>
+                        <div class="col-1-5">
+                            <button class="banner-btn" onclick="buttonClick(3)">
+                                <div class="banner-time banner-time3"></div>
+                                <div class="banner-title">Prada</div>
+                                <div class="banner-subtitle">Summer is comming</div>
+                            </button>
+                        </div>
+                        <div class="col-1-5">
+                            <button class="banner-btn" onclick="buttonClick(4)">
+                                <div class="banner-time banner-time4"></div>
+                                <div class="banner-title">Casadei</div>
+                                <div class="banner-subtitle">All Color avaiable</div>
+                            </button>
+                        </div>
+                        <div class="col-1-5">
+                            <button class="banner-btn" onclick="buttonClick(0)">
+                                <div class="banner-time banner-time0"></div>
+                                <div class="banner-title">Mellow Yellow</div>
+                                <div class="banner-subtitle">Free delivery</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shop bg-color-black ">
+                <div class="container">
+                    <a class="onsale-box" style="margin-left: 0px;" href="#">
+                        <div class="shopbox-inner">
+                            <div class="shop-sort"></div>
+                        </div>
+                    </a>
+                    <a class="special-box" href="#">
+                        <div class="shopbox-inner">
+                            <div class="shop-sort"></div>
+                        </div>
+                    </a>
+                    <a class="musthave-box" style="margin-right: 0px;" href="#">
+                        <div class="shopbox-inner">
+                            <div class="shop-sort"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="product bg-color-primary">
+                <div class="container">
+                    <div class="product-top">
+                        <div class="product-title">Best sellers of he month</div>
+                        <a href="#" class="product-showall">Show All</a>
+                        <div class="productbox" style="margin-left: 0px;">
+                            <div class="productbox-inner">
+                                <div class="bestsellers"></div>
+                            </div>
+                            <div class="product-nav">
+                                <div class="product-name">Product Name</div>
+                                <div class="product-icon">
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-eye" ></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-star"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-share-square"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <div class="product-price bg-color-secondary color-white">$145.99</div>
+                            </div>
+                        </div>
+                        <div class="productbox">
+                            <div class="productbox-inner">
+                                <div class="bestsellers"></div>
+                            </div>
+                            <div class="product-nav">
+                                <div class="product-name">Product Name</div>
+                                <div class="product-icon">
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-eye" ></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-star"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-share-square"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <div class="product-price bg-color-secondary color-white">$145.99</div>
+                            </div>
+                        </div>
+                        <div class="productbox" style="margin-right: 0px;">
+                            <div class="productbox-inner">
+                                <div class="bestsellers"></div>
+                            </div>
+                            <div class="product-nav">
+                                <div class="product-name">Product Name</div>
+                                <div class="product-icon">
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-eye" ></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="far fa-star"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-share-square"></i></a>
+                                    <a href="javascript:void(0)" onclick="useClick()"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <div class="product-price bg-color-secondary color-white">$145.99</div>
+                            </div>
+                            <div class="product-soldout color-white">OUT OF STOCK</div>
+                        </div>
+                    </div>
+                    <div class="product-list">
+                        <div class="row">
+                            <div class="col-lg-3 bg-color-third list-padding">
+                                <div class="row">
+                                    <div class="col-lg-12 freeshopping-1">
+                                        <div class="list-title">1 FREE SHOPPING</div>
+                                        <div class="list-content">Lorem ipsum dolor sit amet consedwd adipisicing elit. Exercitationem, per molestiae? Placeat beatae eaque earum recusandae numquam, harum ea perferendis, blanditiis odio dolorem, culpa ullam?</div>
+                                    </div>
+                                    <div class="col-lg-12 freeshopping-2">
+                                        <div class="list-title">FREE SHOPPING</div>
+                                        <div class="list-content">Lorem ipsum dolor sit amet consedwd adipisicing elit. Exercitationem, per molestiae? Placeat beatae eaque earum recusandae numquam, harum ea perferendis, blanditiis odio dolorem, culpa ullam?</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="row u-mt-25">
+                                    <div class="col-lg-4 bg-color-third list-padding u-ml-25 remove-2 ">
+                                        <div class="list-title">2 TESTMONIALS</div>
+                                        <div class="list-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolores atque sint eius laboriosam officia facilis. Fuga nobis sit ex ab omnis,
+                                        </div>
+                                        <div class="list-writer">&nbsp;- John Doe -</div>
+                                    </div>
+                                    <div class="col-lg-8 bg-color-third list-padding u-ml-25 u-mt-25 remove-3 ">
+                                        <div class="">
+                                            <div class="list-title  tltle-weght">3 BLOG NEWS</div>
+                                            <div class="row news-1">
+                                                <div class="col-lg-1 news-date bg-color-secondary color-white">APR
+                                                    <span>01</span>
+                                                </div>
+                                                <div class="col-lg-10 news-content">
+                                                    Nice & Clean. The best for you blog!
+                                                    <div> Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+                                                </div>
+                                            </div>
+                                            <div class="row news-2">
+                                                <div class="col-lg-1 news-date bg-color-secondary color-white">APR
+                                                    <span>01</span>
+                                                </div>
+                                                <div class="col-lg-10 news-content">
+                                                    <div class="news-title">What an Ecommerce theme!</div>
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row u-mt-26">
+                                    <div class="col-lg-8 bg-color-third list-padding u-ml-25 remove-4 ">
+                                        <div class="list-title tltle-weght">4 BLOG NEWS</div>
+                                        <div class="row news-1">
+                                            <div class="col-lg-1 news-date bg-color-secondary color-white">APR
+                                                <span>01</span>
+                                            </div>
+                                            <div class="col-lg-10 news-content">
+                                                Nice & Clean. The best for you blog!
+                                                <div> Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+                                            </div>
+                                        </div>
+                                        <div class="row news-2">
+                                            <div class="col-lg-1 news-date bg-color-secondary color-white">APR
+                                                <span>01</span>
+                                            </div>
+                                            <div class="col-lg-10 news-content">
+                                                <div class="news-title">What an Ecommerce theme!</div>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 bg-color-third list-padding u-ml-25 u-mt-25 remove-5 ">
+                                        <div class="list-title">5 TESTMONIALS</div>
+                                        <div class="list-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolores atque sint eius laboriosam officia facilis. Fuga nobis sit ex ab omnis,
+                                        </div>
+                                        <div class="list-writer">&nbsp;- John Doe -</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End main -->
+        <!-- Start footer -->
+        <footer class="bg-color-black ">
+            <div class="container">
+                <div class="footer">
+                    <div class="copyright color-grey">Copyright @ Fooseshoex 2013. Designed by EnzoLiVolti.</div>
+                    <ul class="footer-link ">
+                        <a class="footer-item color-grey" href="#">
+                            <li>Home / </li>
+                        </a>
+                        <a class="footer-item color-grey" href="#">
+                            <li>Support / </li>
+                        </a>
+                        <a class="footer-item color-grey" href="#">
+                            <li>Terms and Conditions / </li>
+                        </a>
+                        <a class="footer-item color-grey" href="#">
+                            <li>Faqs / </li>
+                        </a>
+                        <a class="footer-item color-grey" href="#">
+                            <li>Contact us</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+
+</html>
+<!-- js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        classChange(1)
+        myTimer = setInterval(function() {
+            timer(2)
+        }, 3000)
+    });
+
+    function classChange(id) {
+        $('.banner-box').removeClass('show')
+        $('.banner-' + id % 5).addClass('show')
+        $('.banner-time').removeClass('width-full')
+        $('.banner-time' + id % 5).addClass('width-full')
+    }
+
+    function buttonClick(id) {
+        classChange(id)
+        clearInterval(myTimer)
+        myTimer = setInterval(function() {
+            timer(id + 1)
+        }, 3000)
+    }
+
+    function timer(number) {
+        console.log(number)
+        clearInterval(myTimer)
+        classChange(number)
+        myTimer = setInterval(function() {
+            timer(number + 1)
+        }, 3000)
+    }
+
+    // 購物車
+    function shoppingcartBtn() {
+        // console.log($('.shopping-item').hasClass('show'))
+        if ($('.shopping-item').hasClass('list-show')) {
+            $('.shopping-item').removeClass('list-show')
+        } else {
+            $('.shopping-item').addClass('list-show')
+        }
+    }
+
+    function useClick() {
+        alert('已成功加入！');
+    }
+</script>
